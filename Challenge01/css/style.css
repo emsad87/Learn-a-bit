@@ -1,0 +1,165 @@
+:root {
+  --main-bg-color: #4143b1;
+  --second-bg-color: #221727;
+  --second-bg-color-transparent: rgba(34, 23, 39, 0.8);
+  --highlight-color: #5ef4d6;
+  --highlight-color-second: #24e5a3;
+  --w-color: #f1fff6;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  color: var(--w-color);
+}
+
+a,
+ul,
+li {
+  text-decoration: none;
+  color: currentColor;
+  list-style: none;
+}
+
+img {
+  display: block;
+  height: 100%;
+}
+
+.header {
+  background: var(--main-bg-color) url(/images/mintbean-dome.png) no-repeat
+    center / cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  position: relative;
+  background-color: var(--second-bg-color);
+  padding: 1rem 0;
+  box-shadow: 5px 0pc 5px rgba(0, 0, 0, 0.5);
+}
+
+.hamburger {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-size: 2rem;
+  color: var(--highlight-color);
+}
+
+.nav__list {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.nav__item,
+.nav__link {
+  display: block;
+}
+
+.nav__item:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.button {
+  background-color: var(--highlight-color-second);
+  color: var(--second-bg-color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 2rem 0;
+}
+
+.card {
+  background-color: var(--second-bg-color-transparent);
+  padding: 2rem;
+  border: 2px solid var(--highlight-color);
+  border-radius: 0.5rem;
+}
+
+.card__title {
+  font-family: 'Viga', sans-serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.card__text {
+  padding: 1rem 0;
+  font-weight: 100;
+  line-height: 1.6rem;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    width: 85%;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  .nav__item:not(:first-child) {
+    margin: 0;
+  }
+
+  .nav__item:not(:last-child) {
+    border-right: 1px solid currentColor;
+    padding-right: 1rem;
+  }
+
+  .card {
+    width: 55%;
+  }
+
+  .button {
+    display: inline-block;
+  }
+}
