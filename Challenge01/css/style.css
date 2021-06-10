@@ -24,8 +24,8 @@ body {
 a,
 ul,
 li {
-  text-decoration: none;
   color: currentColor;
+  text-decoration: none;
   list-style: none;
 }
 
@@ -35,25 +35,29 @@ img {
 }
 
 .header {
-  background: var(--main-bg-color) url(/images/mintbean-dome.png) no-repeat
-    center / cover;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  background: var(--main-bg-color) url(/images/mintbean-dome.png) no-repeat
+    center / cover;
 }
 
 .container {
   position: relative;
+  display: flex;
+  flex: 1;
   width: 90%;
   height: 100%;
   margin: 0 auto;
 }
 
 .nav {
-  position: relative;
-  background-color: var(--second-bg-color);
+  position: sticky;
+  top: 0;
+  width: 100%;
   padding: 1rem 0;
-  box-shadow: 5px 0pc 5px rgba(0, 0, 0, 0.5);
+  background-color: var(--second-bg-color);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hamburger {
@@ -66,8 +70,8 @@ img {
 
 .nav__list {
   display: none;
-  text-align: center;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .nav__item,
@@ -79,26 +83,40 @@ img {
   margin-top: 1rem;
 }
 
+.nav__link:hover {
+  color: var(--highlight-color-second);
+}
+
 .button {
-  background-color: var(--highlight-color-second);
-  color: var(--second-bg-color);
-  padding: 1rem 2rem;
-  border-radius: 0.5rem;
   display: block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--second-bg-color);
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
+  background-color: var(--highlight-color-second);
+}
+
+.button:hover {
+  color: var(--second-bg-color);
+  background-color: var(--highlight-color);
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
   padding: 2rem 0;
 }
 
 .card {
-  background-color: var(--second-bg-color-transparent);
   padding: 2rem;
+  background-color: var(--second-bg-color-transparent);
   border: 2px solid var(--highlight-color);
   border-radius: 0.5rem;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .card__title {
@@ -113,19 +131,10 @@ img {
   line-height: 1.6rem;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
   .container {
+    flex-direction: row;
     width: 85%;
-  }
-
-  .header {
-    justify-content: center;
-  }
-
-  .nav {
-    position: absolute;
-    top: 0;
-    width: 100%;
   }
 
   .nav .container {
@@ -151,8 +160,8 @@ img {
   }
 
   .nav__item:not(:last-child) {
-    border-right: 1px solid currentColor;
     padding-right: 1rem;
+    border-right: 1px solid currentColor;
   }
 
   .card {
