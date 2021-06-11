@@ -38,7 +38,7 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: var(--main-bg-color) url(/images/mintbean-dome.png) no-repeat
+  background: var(--main-bg-color) url(./images/mintbean-dome.png) no-repeat
     center / cover;
 }
 
