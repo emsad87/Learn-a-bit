@@ -1,9 +1,9 @@
 :root {
   --main-bg-color: #4143b1;
   --second-bg-color: #221727;
-  --second-bg-color-transparent: rgba(34, 23, 39, 0.8);
+  --second-bg-color-t: rgba(34, 23, 39, 0.8);
   --highlight-color: #5ef4d6;
-  --highlight-color-second: #24e5a3;
+  --highlight2-color: #24e5a3;
   --w-color: #f1fff6;
 }
 
@@ -45,19 +45,30 @@ img {
 .container {
   position: relative;
   display: flex;
+  flex-direction: column;
   flex: 1;
   width: 90%;
   height: 100%;
   margin: 0 auto;
 }
 
+.nav .container {
+  gap: 2rem;
+}
+
 .nav {
   position: sticky;
   top: 0;
+  left: 0;
+  z-index: 99;
   width: 100%;
   padding: 1rem 0;
   background-color: var(--second-bg-color);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  align-self: flex-start;
 }
 
 .hamburger {
@@ -70,21 +81,13 @@ img {
 
 .nav__list {
   display: none;
-  margin-top: 1rem;
+  flex-direction: column;
+  gap: 1rem;
   text-align: center;
 }
 
-.nav__item,
-.nav__link {
-  display: block;
-}
-
-.nav__item:not(:first-child) {
-  margin-top: 1rem;
-}
-
 .nav__link:hover {
-  color: var(--highlight-color-second);
+  color: var(--highlight2-color);
 }
 
 .button {
@@ -95,7 +98,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  background-color: var(--highlight-color-second);
+  background-color: var(--highlight2-color);
 }
 
 .button:hover {
@@ -113,7 +116,7 @@ img {
 
 .card {
   padding: 2rem;
-  background-color: var(--second-bg-color-transparent);
+  background-color: var(--second-bg-color-t);
   border: 2px solid var(--highlight-color);
   border-radius: 0.5rem;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
@@ -132,31 +135,28 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    flex-direction: row;
-    width: 85%;
-  }
-
-  .nav .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
   .hamburger {
     display: none;
   }
 
-  .nav__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 0;
+  .button {
+    display: inline-block;
   }
 
-  .nav__item:not(:first-child) {
-    margin: 0;
+  .container {
+    width: 85%;
+  }
+
+  .nav .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav__item:not(:last-child) {
@@ -166,9 +166,5 @@ img {
 
   .card {
     width: 55%;
-  }
-
-  .button {
-    display: inline-block;
   }
 }
