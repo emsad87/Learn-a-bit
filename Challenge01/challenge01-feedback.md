@@ -1,4 +1,4 @@
-<img src="./starter-files/images/learnabit-logo.png" />
+<img src="./images/learnabit-logo.png" />
 
 # Overall Feedback - Learn-a-bit Challenge 01
 
