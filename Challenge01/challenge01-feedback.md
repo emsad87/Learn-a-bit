@@ -6,6 +6,10 @@ Congratulations on your first learn-a-bit challenge! Thank you for participating
 
 After reviewing your submissions, we have come up with some topics you should learn. Try to refactor your challenge 01 code with these practices in mind and make sure to use them on future challenges.
 
+Here is solution by Emsad, you can take a look to compare it with your code.
+
+[Learn-a-bit Challenge01 by Emsad](https://github.com/emsad87/Learn-a-bit/tree/main/Challenge01)
+
 # Semantic
 
 Semantics refers to the purpose or role of a given HTML element. For example, `<p>` is a semantic element that tells us that the text inside it is a paragraph.
