@@ -1,10 +1,14 @@
-<img src="./starter-files/images/learnabit-logo.png" />
+<img src="./images/learnabit-logo.png" />
 
 # Overall Feedback - Learn-a-bit Challenge 01
 
 Congratulations on your first learn-a-bit challenge! Thank you for participating and giving us your feedback. Everyone did very well and we're excited to see you guys again in the next challenge.
 
-After reviewing your submissions, we have come up with some topics you should focus on. Try to refactor your current code and use them on future challenges.
+After reviewing your submissions, we have come up with some topics you should learn. Try to refactor your challenge 01 code with these practices in mind and make sure to use them on future challenges.
+
+Here is solution by Emsad, you can take a look to compare it with your code.
+
+[Learn-a-bit Challenge01 by Emsad](https://github.com/emsad87/Learn-a-bit/tree/main/Challenge01)
 
 # Semantic
 
@@ -29,7 +33,7 @@ When we write our HTML, we should use always use semantic elements that accurate
 </header>
 ```
 
-Here are some articles about semantic code:
+Articles about semantic code:
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Glossary/semantics)
 - [w3schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
@@ -39,7 +43,7 @@ Here are some articles about semantic code:
 
 Mobile-first is when we start by writing our CSS for mobile devices and then use media queries to add in styling for larger screen sizes.
 
-Designing and prototyping your websites for mobile devices first helps you ensure that your users' experience is seamless on any device
+Designing and prototyping your websites for mobile devices first helps ensure that users' experience is seamless on any device
 
 ```css
 .card {
@@ -54,7 +58,7 @@ Designing and prototyping your websites for mobile devices first helps you ensur
 }
 ```
 
-Here are some articles about mobile first approach:
+Articles about mobile first approach:
 
 - [Taking The Right Approach To Responsive Web Design](https://www.freecodecamp.org/news/taking-the-right-approach-to-responsive-web-design/)
 - [Media Queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
@@ -85,7 +89,7 @@ Keeping your naming conventions consistent and practical will make your code eas
 }
 ```
 
-Here are some articles about naming convention:
+Articles about naming convention:
 
 - [CSS Naming Conventions That Will Save You Hours Of Debugging](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/)
 - [BEM-101](http://getbem.com/naming/)
@@ -93,7 +97,7 @@ Here are some articles about naming convention:
 
 ## CSS Declaration Order
 
-Similar to naming convention, having a consistent CSS declaration order will make your code more organize and easier to navigate through.
+Similar to naming convention, having a consistent CSS declaration order will make your code more organize.
 
 ```css
 .card {
@@ -144,7 +148,7 @@ Article about Display and Opacity:
 
 ## Targeting Elements
 
-When you add CSS directly on tags, your markup can’t change. Your style is tightly coupled to your DOM, and any change increases the risk of breaking things.
+Targeting html elements in your css will make your styles more tightly coupled to your DOM and so making any changes will have a higher risk of breaking things. Use classes instead.
 
 Bad Practice
 
@@ -170,7 +174,7 @@ Article about Targeting Elements:
 
 ## Importing Fonts
 
-Importing fonts into html instead of in css will prevent loading, performance, and flickering issues.
+Importing fonts in html instead of in css will prevent loading, performance, and flickering issues.
 
 Bad Practice
 
