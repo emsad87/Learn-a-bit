@@ -1,4 +1,4 @@
-<img src="../Challenge01/images/learnabit-logo.png" style="width: 600px" />
+<img src="../Challenge01/images/learnabit-logo.png"/>
 
 [Learn-a-bit Guidebook](https://sites.google.com/mintbean.io/mintbean-learn-a-bit-guide/about-learn-a-bit)
 
