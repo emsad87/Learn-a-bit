@@ -4,12 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mintbean Learn-a-bit Challenge 04 - Contact</title>
+    <title>
+      Mintbean Learn-a-bit Challenge 04 - Contact by Emsad Ahmetašević
+    </title>
+
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    Have a question about a Learn-a-bit or workshop? Want to speak at one of our
-    events or discuss a potential collaboration? Contact us, we'd love to start
-    a conversation.
+    <section class="contact">
+      <h2 class="contact__title">Contact Us</h2>
+      <div class="container">
+        <article class="contact__card">
+          <section class="contact__info">
+            <img class="contact__logo" src="./images/learnabit-logo.png" />
+            <p class="contact__text">
+              Have a question about a Learn-a-bit or workshop? Want to speak at
+              one of our events or discuss a potential collaboration? Contact
+              us, we'd love to start a conversation.
+            </p>
+          </section>
+          <section class="contact__form">
+            <form action="#">
+              <input
+                class="contact__input"
+                type="text"
+                id="contactName"
+                name="contactName"
+                placeholder="Full name"
+              />
+
+              <input
+                class="contact__input"
+                type="email"
+                id="contactEmail"
+                name="contactEmail"
+                placeholder="Email"
+              />
+
+              <textarea
+                class="contact__input"
+                id="contactMessage"
+                name="contactMessage"
+                placeholder="Message"
+                style="height: 150px"
+              ></textarea>
+
+              <input class="contact__button" type="submit" value="Send" />
+            </form>
+          </section>
+        </article>
+      </div>
+    </section>
   </body>
 </html>
