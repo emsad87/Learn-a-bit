@@ -8,6 +8,13 @@
       Mintbean Learn-a-bit Challenge 04 - Contact by Emsad Ahmetašević
     </title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -23,36 +30,59 @@
               one of our events or discuss a potential collaboration? Contact
               us, we'd love to start a conversation.
             </p>
+            <ul class="contact__icons">
+              <li class="contact__icon">
+                <a href="#"
+                  ><img src="./images/icons/globe-icon.svg" alt="Globe Icon"
+                /></a>
+              </li>
+              <li class="contact__icon">
+                <a href="#"
+                  ><img src="./images/icons/github-icon.svg" alt="Github Icon"
+                /></a>
+              </li>
+              <li class="contact__icon">
+                <a href="#"
+                  ><img
+                    src="./images/icons/linkedin-icon.svg"
+                    alt="LinkedIn Icon"
+                /></a>
+              </li>
+              <li class="contact__icon">
+                <a href="#"
+                  ><img src="./images/icons/mail-icon.svg" alt="Mail Icon"
+                /></a>
+              </li>
+            </ul>
           </section>
-          <section class="contact__form">
-            <form action="#">
-              <input
-                class="contact__input"
-                type="text"
-                id="contactName"
-                name="contactName"
-                placeholder="Full name"
-              />
 
-              <input
-                class="contact__input"
-                type="email"
-                id="contactEmail"
-                name="contactEmail"
-                placeholder="Email"
-              />
+          <form class="contact__form" action="#">
+            <input
+              class="contact__input"
+              type="text"
+              id="contactName"
+              name="contactName"
+              placeholder="Full name"
+            />
 
-              <textarea
-                class="contact__input"
-                id="contactMessage"
-                name="contactMessage"
-                placeholder="Message"
-                style="height: 150px"
-              ></textarea>
+            <input
+              class="contact__input"
+              type="email"
+              id="contactEmail"
+              name="contactEmail"
+              placeholder="Email"
+            />
 
-              <input class="contact__button" type="submit" value="Send" />
-            </form>
-          </section>
+            <textarea
+              class="contact__input"
+              id="contactMessage"
+              name="contactMessage"
+              placeholder="Message"
+              style="height: 150px"
+            ></textarea>
+
+            <input class="contact__button" type="submit" value="Send" />
+          </form>
         </article>
       </div>
     </section>
