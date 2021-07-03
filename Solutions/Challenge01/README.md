@@ -1,4 +1,4 @@
-<img src="./images/learnabit-logo.png" />
+<img src="./images/learnabit-logo.svg" />
 
 ## Learn-a-bit Challenge 01 Solution
 
@@ -7,3 +7,11 @@ Solution by Emsad Ahmetašević - [LinkedIn](https://www.linkedin.com/in/emsad/)
 This solution is just one way to solve the challenge, it's not the most perfect one.
 
 Built with a focus on Semantic HTML, mobile-first, naming convention, CSS declaration order, folder structure.
+
+## Desktop
+
+![design desktop](./images/learnabit-challenge01-desktop-emsad.png)
+
+## Mobile
+
+![design mobile](./images/learnabit-challenge01-mobile-emsad.png)

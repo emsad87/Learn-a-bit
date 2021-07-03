@@ -1,6 +1,6 @@
 <img src="../Challenge01/images/learnabit-logo.svg" />
 
-## Learn-a-bit Challenge 02 Solution
+## Learn-a-bit Challenge 04 Solution
 
 Solution by Emsad Ahmetašević - [LinkedIn](https://www.linkedin.com/in/emsad/) | [Github](https://github.com/emsad87) | [Portfolio](https://emsad87.github.io/) | [Twitter](https://twitter.com/emsad87)
 
@@ -10,8 +10,8 @@ Built with a focus on Semantic HTML, mobile-first, naming convention, CSS declar
 
 ## Desktop
 
-![design desktop](./images/learnabit-challenge02-desktop-emsad.png)
+![design desktop](./images/learnabit-challenge04-desktop-emsad.png)
 
 ## Mobile
 
-![design mobile](./images/learnabit-challenge02-mobile-emsad.png)
+![design mobile](./images/learnabit-challenge04-mobile-emsad.png)
