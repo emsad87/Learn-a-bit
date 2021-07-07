@@ -10,11 +10,7 @@ Folder [Design](./design-guideline) - Contains Design and guideline files for th
 
 Folder [images](./images) - Contains image files needed for the challenge.
 
-<<<<<<< HEAD
 - [Learn-a-bit logo](./images/learnabit-logo.svg)
-=======
-- [Learn-a-bit logo](./images/learnabit-logo.png)
->>>>>>> upstream/main
 - [Learn-a-bit Background](./images/mintbean-dome.png)
 
 File [index.html](./index.html) - Starter basic html file with text for the challenge.
