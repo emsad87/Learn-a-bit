@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mintbean Learn-a-bit Challenge 05 - Footer</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Viga&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
@@ -13,42 +17,30 @@
         <ul class="contact__icons">
           <li>
             <a href="#">
-              <img
-                class="contact__icon"
-                src="./images/icons/globe-icon.svg"
-                alt="Globe Icon"
-              />
-              <h3 class="icon-text">Website</h3>
+              <img class="contact__icon" src="./images/icons/globe-icon.svg" alt="Globe Icon" />
+              <h3 class="contact__icon-text">Website</h3>
             </a>
           </li>
           <li>
             <a href="#">
-              <img
-                class="contact__icon"
-                src="./images/icons/github-icon.svg"
-                alt="Github Icon"
-              />
-              <h3 class="icon-text">Github</h3>
+              <div class="contact__icon">
+                <img src="./images/icons/github-icon.svg" alt="Github Icon" />
+              </div>
+              <h3 class="contact__icon-text">Github</h3>
             </a>
           </li>
           <li>
             <a href="#">
-              <img
-                class="contact__icon"
-                src="./images/icons/linkedin-icon.svg"
-                alt="LinkedIn Icon"
-              />
-              <h3 class="icon-text">LinkedIn</h3>
+              <div class="contact__icon">
+                <img src="./images/icons/linkedin-icon.svg" alt="LinkedIn Icon" />
+              </div>
+              <h3 class="contact__icon-text">LinkedIn</h3>
             </a>
           </li>
           <li>
             <a href="#">
-              <img
-                class="contact__icon"
-                src="./images/icons/mail-icon.svg"
-                alt="Mail Icon"
-              />
-              <h3 class="icon-text">Email</h3>
+              <img class="contact__icon" src="./images/icons/mail-icon.svg" alt="Mail Icon" />
+              <h3 class="contact__icon-text">Email</h3>
             </a>
           </li>
         </ul>
@@ -66,12 +58,13 @@
           <li class="nav__item">
             <a class="nav__link" href="#">Contact</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link button" href="#">Join</a>
-          </li>
         </ul>
       </div>
 
+      <article class="powered">
+        <img class="powered__logo" src="./images/learnabit-logo.svg" alt="Learn-a-bit logo" />
+        <p class="powered__text">Powered by: <a href="#">Mintbean</a></p>
+      </article>
       <div class="copyright">Copyright &#169; 2021 All rights reserved.</div>
     </footer>
   </body>
