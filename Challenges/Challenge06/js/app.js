@@ -1,3 +1,12 @@
+window.addEventListener('load', () => {
+  const body = document.querySelector('body');
+  const loadingScreen = document.querySelector('.loadingScreen');
+  loadingScreen.style.opacity = '0';
+  window.setTimeout(() => {
+    body.classList.remove('loading');
+  }, 500);
+});
+
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.navbar__menu');
 const navLink = document.querySelectorAll('.navbar__link');
