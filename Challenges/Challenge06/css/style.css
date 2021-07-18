@@ -555,7 +555,7 @@ img {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: fit-content;
+    width: auto;
     padding: 0;
     font-size: 1rem;
     border: none;
