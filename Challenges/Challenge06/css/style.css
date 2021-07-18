@@ -323,7 +323,7 @@ img {
   flex-direction: column;
   flex: 1;
   background-color: var(--second-bg-color);
-  border: 1px solid var(--highlight-color);
+  border: 2px solid var(--highlight-color);
   border-radius: 0.8em;
   box-shadow: var(--shadow);
   overflow: hidden;
