@@ -4,38 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
     <title>Mintbean Learn-a-bit Challenge 06 - Landing Page by Emsad Ahmetašević</title>
   </head>
 
   <body>
     <!-- Header section -->
-    <header class="header" id="#intro">
+    <header class="header" id="intro">
       <nav class="navbar">
-        <img class="logo" src="./images/learnabit-logo.svg" alt="" />
-        <ul class="navbar__links">
-          <li class="navbar__item"><a class="navbar__link" href="#intro">Intro</a></li>
-          <li class="navbar__item"><a class="navbar__link" href="#about">About</a></li>
-          <li class="navbar__item"><a class="navbar__link" href="#team">Team</a></li>
-          <li class="navbar__item"><a class="navbar__link" href="#contact">Contact</a></li>
-          <li class="navbar__item"><a class="button" href="#">Join</a></li>
-        </ul>
+        <div class="container">
+          <img class="logo" src="./images/learnabit-logo.svg" alt="" />
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="#intro" class="navbar__link">Intro</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__link">About</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#team" class="navbar__link">Team</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#contact" class="navbar__link">Contact</a>
+            </li>
+            <li class="navbar__item"><a class="button" href="https://mintbean.io/meets?sort=upcoming">Join</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
       </nav>
-      <article class="header__card">
-        <h1 class="header__title">Level up bit by bit with Learn-a-bit</h1>
 
-        <p class="header__text">
-          As the name says, the purpose of Learn-a-bit is about learning one bit of code at a time. In these events, you will build small projects to
-          educate yourself on the fundamentals of web development using HTML, CSS, and JavaScript. These events are relaxed and non-competitive, but
-          are still chalennging enough to push you to use all your resources and knowledge to solve each problem.
-        </p>
-
-        <a class="button" href="">Join a learn-a-ton</a>
-      </article>
+      <section class="hero">
+        <div class="container">
+          <article class="hero__card">
+            <h1 class="hero__title">Level up bit by bit with Learn-a-bit</h1>
+            <p class="hero__text">
+              As the name says, the purpose of Learn-a-bit is about learning one bit of code at a time. In these events, you will build small projects
+              to educate yourself on the fundamentals of web development using HTML, CSS, and JavaScript. These events are relaxed and
+              non-competitive, but are still chalennging enough to push you to use all your resources and knowledge to solve each problem.
+            </p>
+            <a class="button" href="https://mintbean.io/meets?sort=upcoming">Join a learn-a-bit</a>
+          </article>
+        </div>
+      </section>
     </header>
 
     <main class="main">
       <!-- About section -->
-      <section class="about" id="#about">
+      <section class="about" id="about">
         <h2 class="section__title">What is it about?</h2>
         <div class="container">
           <article class="about__card">
@@ -52,17 +73,17 @@
                   ourselves and our knowledge so we should make it shine in the best light.
                 </p>
               </section>
-              <a class="button" href="#">Join a Learn-a-bit</a>
+              <a class="button" href="https://mintbean.io/meets?sort=upcoming">Join a Learn-a-bit</a>
             </div>
           </article>
         </div>
       </section>
       <!-- Team section -->
-      <section class="team" id="#team">
-        <h2 class="team__title">Team</h2>
+      <section class="team" id="team">
+        <h2 class="section__title">Team</h2>
         <div class="container">
           <article class="team__card">
-            <img class="team__image" src="./images/team/emsad.png" alt="" />
+            <img class="team__image" src="./images/team/emsad.jpg" alt="" />
             <header class="team__header">
               <h3 class="team__name">Emsad Ahmetašević</h3>
               <h4 class="team__position">Front-end developer</h4>
@@ -70,29 +91,29 @@
             <p class="team__text">I am a positive, creative and fun person seeking more knowledge and opportunities to improve and show my best.</p>
             <ul class="social__icons">
               <li class="social__item">
-                <a class="social__icon" href="#">
+                <a class="social__icon" href="https://emsad87.github.io/">
                   <img src="./images/icons/globe-icon.svg" alt="Globe Icon" />
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__icon" href="#">
+                <a class="social__icon" href="https://github.com/emsad87">
                   <img src="./images/icons/github-icon.svg" alt="Github Icon" />
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__icon" href="#">
+                <a class="social__icon" href="https://www.linkedin.com/in/emsad/">
                   <img src="./images/icons/linkedin-icon.svg" alt="LinkedIn Icon" />
                 </a>
               </li>
               <li class="social__item">
-                <a class="social__icon" href="#">
+                <a class="social__icon" href="mailto:emsad87@gmail.com">
                   <img src="./images/icons/mail-icon.svg" alt="Mail Icon" />
                 </a>
               </li>
             </ul>
           </article>
           <article class="team__card">
-            <img class="team__image" src="./images/team/chris.png" alt="" />
+            <img class="team__image" src="./images/team/chris.jpeg" alt="" />
             <header class="team__header">
               <h3 class="team__name">Christopher DiPiero</h3>
               <h4 class="team__position">Front-end developer</h4>
@@ -157,8 +178,8 @@
         </div>
       </section>
       <!-- Contact section -->
-      <section class="contact" id="#contact">
-        <h2 class="contact__title">Contact Us</h2>
+      <section class="contact" id="contact">
+        <h2 class="section__title">Contact Us</h2>
         <div class="container">
           <article class="contact__card">
             <section class="contact__info">
@@ -169,22 +190,22 @@
               </p>
               <ul class="social__icons">
                 <li class="social__item">
-                  <a class="social__icon" href="#">
+                  <a class="social__icon" href="https://mintbean.io/">
                     <img src="./images/icons/globe-icon.svg" alt="Globe Icon" />
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__icon" href="#">
+                  <a class="social__icon" href="https://github.com/Mintbean/Learn-a-bit">
                     <img src="./images/icons/github-icon.svg" alt="Github Icon" />
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__icon" href="#">
+                  <a class="social__icon" href="https://www.linkedin.com/company/mintbean/">
                     <img src="./images/icons/linkedin-icon.svg" alt="LinkedIn Icon" />
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__icon" href="#">
+                  <a class="social__icon" href="mailto:monarch@mintbean.io">
                     <img src="./images/icons/mail-icon.svg" alt="Mail Icon" />
                   </a>
                 </li>
@@ -210,46 +231,56 @@
         <section class="footer__icons">
           <ul class="social__icons">
             <li class="social__item">
-              <a class="social__icon" href="#">
-                <img src="./images/icons/globe-icon.svg" alt="Globe Icon" />
-                <h3 class="social__title">Website</h3>
+              <a class="social__link" href="https://mintbean.io/">
+                <figure class="social__icon">
+                  <img src="./images/icons/globe-icon.svg" alt="Globe Icon" />
+                </figure>
+                <figcaption class="social__title">Website</figcaption>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__icon" href="#">
-                <img src="./images/icons/github-icon.svg" alt="Github Icon" />
-                <h3 class="social__title">Github</h3>
+              <a class="social__link" href="https://github.com/Mintbean/Learn-a-bit">
+                <figure class="social__icon">
+                  <img src="./images/icons/github-icon.svg" alt="Github Icon" />
+                </figure>
+                <figcaption class="social__title">Github</figcaption>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__icon" href="#">
-                <img src="./images/icons/linkedin-icon.svg" alt="LinkedIn Icon" />
-                <h3 class="social__title">LinkedIn</h3>
+              <a class="social__link" href="https://www.linkedin.com/company/mintbean/">
+                <figure class="social__icon">
+                  <img src="./images/icons/linkedin-icon.svg" alt="LinkedIn Icon" />
+                </figure>
+                <figcaption class="social__title">LinkedIn</figcaption>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__icon" href="#">
-                <img src="./images/icons/mail-icon.svg" alt="Mail Icon" />
-                <h3 class="social__title">Email</h3>
+              <a class="social__link" href="mailto:monarch@mintbean.io">
+                <figure class="social__icon">
+                  <img src="./images/icons/mail-icon.svg" alt="Mail Icon" />
+                </figure>
+                <figcaption class="social__title">Email</figcaption>
               </a>
             </li>
+          </ul>
+        </section>
+        <section class="footer__links">
+          <ul class="navbar__links">
+            <li class="navbar__item"><a class="navbar__link" href="#intro">Intro</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#about">About</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#team">Team</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#contact">Contact</a></li>
           </ul>
         </section>
         <section class="footer__brand">
           <img class="footer__logo" src="./images/learnabit-logo.svg" alt="Learn-a-bit logo" />
-          <span>Powered by:</span>
-          <img class="footer__powered-logo" src="./images/mintbean-logo.svg" alt="Mintbean logo" />
+          <section class="footer__powered">
+            <span class="poweredby">Powered by:</span>
+            <img class="footer__powered-logo" src="./images/mintbean-logo.svg" alt="Mintbean logo" />
+          </section>
         </section>
-        <section class="footer__links">
-          <ul class="navbar__links">
-            <li class="navbar__item"><a class="navbar__link" href="">Intro</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">About</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Team</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Contact</a></li>
-          </ul>
-        </section>
-        <article class="copyright">Copyright &#169; 2021 All rights reserved.</article>
       </div>
+      <article class="copyright">Copyright &#169; 2021 All rights reserved.</article>
     </footer>
   </body>
 </html>
